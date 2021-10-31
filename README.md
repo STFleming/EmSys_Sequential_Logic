@@ -31,6 +31,18 @@ In this lecture we will learn how to design such sequential circuits in Verilog.
 __Like the previous Hardware Description Language repository the rest of this repository will consist of several short videos explaining some of the concepts that were covered in the lecture.__
 
 ## The DType FlipFlop
-One of the most 
+One of the most basic primitives of synchronous sequential logic is the DType FlipFlop. Please watch the following video to get an overview of the DType and how to describe it in Verilog. 
 
+<p align="center">
+        <a href="http://www.youtube.com/watch?feature=player_embedded&v=jlS4MDr58C8
+        " target="_blank"><img src="misc/dtype_video.png"
+        alt="Lesson Video" width="510" height="360" border="10" /></a>
+</p>
+
+To run the example in this repository _on the lab machines_ please use the following:
+
+```
+	cd DType/
+	make
+```
 
