@@ -46,3 +46,32 @@ To run the example in this repository _on the lab machines_ please use the follo
 	make
 ```
 
+Once the simulation completes you can then open ``gtkwave`` to look at the waveform.
+
+```
+        gtkwave wavedump.vcd
+```
+
+## A counter circuit 
+We can chain multiple DType FlipFlops together to make a register that can store a multibit number. These registers can then be used to store data or interate over data, such as a counter. Please watch the following video on how to make a counter circuit with Verilog:
+
+<p align="center">
+        <a href="http://www.youtube.com/watch?feature=player_embedded&v=U3K91t8aIXA
+        " target="_blank"><img src="misc/counter_video.png"
+        alt="Lesson Video" width="510" height="360" border="10" /></a>
+</p>
+
+To run the example in this repository _on the lab machines_ please use the following:
+
+```
+	cd counter/
+	make
+```
+
+Once the simulation completes you can then open ``gtkwave`` to look at the waveform.
+
+```
+        gtkwave wavedump.vcd
+```
+
+
