@@ -74,4 +74,27 @@ Once the simulation completes you can then open ``gtkwave`` to look at the wavef
         gtkwave wavedump.vcd
 ```
 
+## Conditionally updating a register 
+Often we don't want a register value to be updated every clock cycle, we want to add a condition on when it can update. This is often referred to as a write enable signal. Please watch the following video that demonstrates this:
+
+<p align="center">
+        <a href="http://www.youtube.com/watch?feature=player_embedded&v=rLxE8sf2zPM
+        " target="_blank"><img src="misc/we_video.png"
+        alt="Lesson Video" width="510" height="360" border="10" /></a>
+</p>
+
+To run the example in this repository _on the lab machines_ please use the following:
+
+```
+	cd write_enable/
+	make
+```
+
+Once the simulation completes you can then open ``gtkwave`` to look at the waveform.
+
+```
+        gtkwave wavedump.vcd
+```
+
+
 
