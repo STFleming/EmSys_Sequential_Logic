@@ -96,5 +96,26 @@ Once the simulation completes you can then open ``gtkwave`` to look at the wavef
         gtkwave wavedump.vcd
 ```
 
+## Memory-mapped interface 
+On our TinyPicos we interact with hardware through pointers to memory mapped hardware locations. However, what does this look like from a hardware perspective? Please watch the following video that will introduce a Lite memory mapped hardware interface (similar to the AXI Lite interface used in ARM processors). 
+
+<p align="center">
+        <a href="http://www.youtube.com/watch?feature=player_embedded&v=gax3yg27doc
+        " target="_blank"><img src="misc/mmio_video.png"
+        alt="Lesson Video" width="510" height="360" border="10" /></a>
+</p>
+
+To run the example in this repository _on the lab machines_ please use the following:
+
+```
+	cd write_enable/
+	make
+```
+
+Once the simulation completes you can then open ``gtkwave`` to look at the waveform.
+
+```
+        gtkwave wavedump.vcd
+```
 
 
