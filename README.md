@@ -10,7 +10,7 @@ To store state in the system, we essentially need to create a feedback loop in o
   <img src="misc/combinatorial_loop.png" width="600" />
 </p>
 
-One way to save state is to feedback some of the output through a delayed line back to the input. However, this quickly becomes quite difficult to manage. Knowing the exact timings and precise the ordering of when signals arrive is challenging. These types of circuits are known as asynchronous sequential circuits and while they have a lot of benefits, for example, power efficiency or speed, they are generally too difficult to design for large circuits. 
+One way to save state is to feedback some of the output through a delayed line back to the input. However, this quickly becomes quite difficult to manage. Knowing the exact timings and precise ordering of when signals arrive is challenging. These types of circuits are known as asynchronous sequential circuits and while they have a lot of benefits, for example, power efficiency or speed, they are generally too difficult to design for large circuits. 
 
 For this reason, most digital circuits are synchronous sequential circuits. Where a synchronising signal, called a clock signal, is used to keep all parts of the circuit in tune with each other.
 
@@ -24,7 +24,7 @@ The clock signal essentially rises and falls at a regular rate and is distribute
   <img src="misc/sequential_logic_overview.png" width="600" />
 </p>
 
-In this lecture we will learn how to design such sequential circuits in Verilog. Generally, the form of these circuits will be: 
+In this lecture, we will learn how to design such sequential circuits in Verilog. Generally, the form of these circuits will be: 
 * A combinatorial portion where we assign some internal signals.
 * A sequential storage element that stores some of the output of our combinatorial circuit and uses it to drive some of the inputs of our combinatorial logic.
 
