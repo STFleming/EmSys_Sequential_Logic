@@ -5,3 +5,32 @@ In the previous lecture, we explored how to design logic circuits using the Veri
 Saving state introduces an extra layer of complexity when designing circuits, __synchronisation__. For combinatorial circuits, when the input changes, the effects are propagated through the circuit. However, these changes do not take place instantaneously but are subject to some delay. The time it takes the signal to propagate through gates and wires means that when the input changes it can take a time before the output changes.
 
 To store state in the system, we essentially need to create a feedback loop in our circuit. Where data that is produced in previous iterations is taken from the output and sent back to the input. As the data is flowing back through the circuit, we have some memory of the output. 
+
+<p align="center">
+  <img src="misc/combinatorial_loop.png" width="600" />
+</p>
+
+One way to save state is to feedback some of the output through a delayed line back to the input. However, this quickly becomes quite difficult to manage. Knowing the exact timings and precise the ordering of when signals arrive is challenging. These types of circuits are known as asynchronous sequential circuits and while they have a lot of benefits, for example, power efficiency or speed, they are generally too difficult to design for large circuits. 
+
+For this reason, most digital circuits are synchronous sequential circuits. Where a synchronising signal, called a clock signal, is used to keep all parts of the circuit in tune with each other.
+
+<p align="center">
+  <img src="misc/clock.png" width="600" />
+</p>
+
+The clock signal essentially rises and falls at a regular rate and is distributed to all parts of the circuit. Sequential elements of the circuit can change on the clock edge and use this to ensure that they all change at the same time, abstracting away a lot of the design complexity that occurs with asynchronous sequential circuits.
+
+<p align="center">
+  <img src="misc/sequential_logic_overview.png" width="600" />
+</p>
+
+In this lecture we will learn how to design such sequential circuits in Verilog. Generally, the form of these circuits will be: 
+* A combinatorial portion where we assign some internal signals.
+* A sequential storage element that stores some of the output of our combinatorial circuit and uses it to drive some of the inputs of our combinatorial logic.
+
+__Like the previous Hardware Description Language repository the rest of this repository will consist of several short videos explaining some of the concepts that were covered in the lecture.__
+
+## The DType FlipFlop
+One of the most 
+
+
